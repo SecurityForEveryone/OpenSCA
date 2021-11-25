@@ -1,3 +1,5 @@
 fileignoreconfig:
 - filename: docs/diagrams/opensca-context.drawio
   checksum: 5cd2521043c8a54561e8e7bb2e92468a36c9d12a117f28e4a1eb1195350ce6a7
+- filename: go.sum
+  checksum: 53288c832badb8eff35a37f8463798b2a2740d3b5446902dd59c920d7db7c007
