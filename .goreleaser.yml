@@ -12,6 +12,15 @@ builds:
       - linux
       - windows
       - darwin
+    mod_timestamp: '{{ .CommitTimestamp }}'
+    ldflags: |
+      -w
+      -s
+      -extldflags '-static'
+      -X github.com/SecurityForEveryone/software-composition-scanner/scanner/version.version={{.Version}}
+      -X github.com/SecurityForEveryone/software-composition-scanner/scanner/version.gitCommit={{.Commit}}
+      -X github.com/SecurityForEveryone/software-composition-scanner/scanner/version.buildDate={{.Date}}
+      -X github.com/SecurityForEveryone/software-composition-scanner/scanner/version.gitTreeState={{.Env.BUILD_GIT_TREE_STATE}}
 archives:
   - replacements:
       darwin: Darwin
