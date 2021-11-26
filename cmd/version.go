@@ -43,8 +43,7 @@ func printVersion(_ *cobra.Command, _ []string) error {
 		enc.SetIndent("", " ")
 		err := enc.Encode(&struct {
 			version.Version
-			Application   string `json:"application"`
-			SchemaVersion int    `json:"supportedDbSchema"`
+			Application string `json:"application"`
 		}{
 			Version:     versionInfo,
 			Application: scanner.ApplicationName,
