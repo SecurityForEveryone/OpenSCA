@@ -1,7 +1,8 @@
-# OpenSCA
-A complete solution for Software Composition Analysis 
+# Scanner
 
-# Local Developer Machine Setup
+Wrapper for popular open source vulnerablity scanners and license compliance tools
+
+# Local Developement Environment Setup
 
 - Install or ensure you have `Go 1.17.3` or above.
 - Pull the code from git repo.
